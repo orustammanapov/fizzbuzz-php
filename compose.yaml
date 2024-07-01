@@ -1,0 +1,16 @@
+services:
+  test:
+    container_name: fizzbuzz
+    build:
+      context: .
+    # ====================================
+    # Enable indexing of the vendor folder
+    # ====================================
+    # volumes:
+    #   - ./:/var/www/html
+    #   - /var/www/html
+    # ===========================
+    # Use for debugging purposes,
+    # in case build process fails
+    # ===========================
+    # entrypoint: [ "tail", "-f", "/dev/null" ]
